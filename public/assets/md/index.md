@@ -7,6 +7,8 @@ Manage documents using static markdown files only.
 ## scripts
 
 ```
+//install packages
+$ npm run i
 //start dev server
 $ npm run dev
 //preview 
