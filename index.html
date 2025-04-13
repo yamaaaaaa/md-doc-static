@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>md-doc-static</title>
+	<link rel="stylesheet" href="./css/github-markdown.css">
+	<link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div id="app">
+	<div class="container">
+		<main
+			id="markdownBody"
+			class="main markdown-body"
+			v-html="body"
+		></main>
+		<nav class="nav">
+			<ul>
+				<li v-for="(page,index) in pages" key="index">
+					<a
+						@click="link"
+						:href="'#'+page.replace('.md','')"
+						:data-file="page"
+					>{{ page }}</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<script src="./assets/js/nav.json"></script>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
