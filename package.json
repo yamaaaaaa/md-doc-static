@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --force",
-    "build": "node make_pdf.js && vite build",
-    "pdf": "node make_pdf.js",
     "preview": "vite preview",
+    "pdf": "node make_pdf.js",
+    "build": "node make_pdf.js && vite build"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
