@@ -4,7 +4,6 @@ import {mdToPdf} from 'md-to-pdf';
 
 const mdDir = 'public/assets/md/';
 const pdfDir = 'public/assets/pdf/';
-const navJsonFile = 'public/assets/js/nav.json';
 const files = fs.readdirSync(mdDir);
 for(let i = 0; i<files.length; i++){
 	if(files[i].indexOf('.md') !== -1){

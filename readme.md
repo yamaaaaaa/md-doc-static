@@ -15,7 +15,9 @@ $ npm run dev
 $ npm run preveiw
 //pdf
 $ npm run pdf
-//build (PDFs are also automatically generated during the build.)
+//html
+$ npm run html
+//build
 $ npm run build
 ```
 
