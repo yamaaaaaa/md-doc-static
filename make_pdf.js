@@ -12,6 +12,7 @@ for(let i = 0; i<files.length; i++){
 		(async () => {
 			const pdf = await mdToPdf({ path: src }).catch(console.error);
 			if (pdf) {
+				console.log(pdf,dist);
 				fs.writeFileSync(dist, pdf.content);
 			}
 		})();
